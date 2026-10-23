@@ -134,3 +134,48 @@ a:focus-visible{
   .hero h1{ font-size: 28px; }
   nav{ gap: 14px; }
 }
+
+/* ---------- Project cards on home page ---------- */
+.project-cover{ display: block; margin-bottom: 14px; }
+.project-cover img{
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+.project h3 a{ color: var(--text); text-decoration: none; }
+.project h3 a:hover{ color: var(--accent); }
+
+/* ---------- Individual project pages ---------- */
+.project-page{ padding-top: 32px; padding-bottom: 24px; }
+.back-link{ font-size: 15px; text-decoration: none; }
+.back-link:hover{ text-decoration: underline; }
+.project-page h1{ font-size: 32px; margin: 20px 0 8px; }
+.project-summary{ color: var(--text-dim); font-size: 18px; margin: 0 0 24px; }
+.project-page h2{ font-size: 21px; margin: 36px 0 10px; }
+.hero-image, .project-page figure img{
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+.project-page figure{ margin: 28px 0; }
+.project-page figcaption{
+  color: var(--text-dim);
+  font-size: 14px;
+  margin-top: 8px;
+}
+.project-facts{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 24px;
+  margin: 24px 0 0;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.project-facts dt{ font-size: 13px; color: var(--text-dim); }
+.project-facts dd{ margin: 2px 0 0; font-weight: 500; }
